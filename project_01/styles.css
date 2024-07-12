@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset ="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id ="title">FreeCodeCamp Survey Form</h1>
+  </head>
+
+  <body>
+    <p id ="description">Thank you for participating</p>
+    <form id = "survey-form">
+      <label id="name-label">Name<input id="name" type ="text" required placeholder="Name"></input></label>
+      <label id="email-label">Email<input id="email" type ="email" required placeholder="Email adress"></input></label>
+      <label id="number-label">Age<input id="number" type ="number" required min ="18" max ="50" placeholder="Age"></input></label>
+      <label for ="dropdown-menu">Which option best describes your current position
+      <select id ="dropdown">
+        <option id ="">Student</option>
+        <option id ="1">Part time</option>
+        <option id ="2">Full time</option>
+        </select>
+      </label>
+
+      <label for="definetly"><label type="recomend">Would you recomand us?</label> Definetly<input type="radio" id ="definetly" checked class ="radio" name="recomandation" value="1"></input></label>
+      <label for="maybe">Maybe<input type="radio" id ="maybe" class ="radio" name="recomandation" value="0"></input></label>
+      <label for="not-sure">Not sure<input type="radio" id ="not-sure"  class ="radio" name="recomandation" value="-1"></input></label>
+
+      <label for="terms-and-conditions"><label>Do you accept the terms and conditions?</label>
+        Yes<input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="1" /></label>
+       <label>No<input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="0"/> </label>
+       <label for ="suggestions">Give us suggestions
+         <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Write here..."></textarea>
+       </label>
+       <input id ="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
